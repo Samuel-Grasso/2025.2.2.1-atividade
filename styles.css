@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 /* Paleta de cores */
-:root{
+:root {
     --primaria: #27187E;
     --secundaria: rgb(117, 139, 253);
     --terciaria: #AEB8FE;
@@ -18,7 +20,8 @@ html {
 
 /* Tipografia */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-body{
+
+body {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -27,17 +30,20 @@ body{
     color: var(--font-color);
     background-color: var(--neutra);
 }
-header{
+
+header {
     width: 100vw;
     min-height: 100vh;
     background-color: var(--primaria);
     color: var(--neutra);
     display: flex;
     justify-content: center;
-    align-items: center; 
-    flex-direction: column;;
+    align-items: center;
+    flex-direction: column;
+    ;
 }
-.box{
+
+.box {
     border: var(--acento) 2px solid;
     padding: 40px;
     border-radius: 15px;
@@ -47,28 +53,35 @@ header{
     align-items: center;
     height: 300px;
 }
-.header-principal h1{
-    flex: 1;                /* takes remaining space */
+
+.header-principal h1 {
+    flex: 1;
+    /* takes remaining space */
     display: flex;
-    justify-content: center; /* center vertically */
-    align-items: center; 
+    justify-content: center;
+    /* center vertically */
+    align-items: center;
 }
+
 .animated-gradient {
-  background: linear-gradient(to right, red, orange, yellow, green, indigo, violet);
-  background-size: 300% 100%; /* Make the gradient wider than the element */
-  animation: slideGradient 10s linear infinite alternate; /* Animate the background position */
+    background: linear-gradient(to right, red, orange, yellow, green, indigo, violet);
+    background-size: 300% 100%;
+    /* Make the gradient wider than the element */
+    animation: slideGradient 10s linear infinite alternate;
+    /* Animate the background position */
 }
 
 @keyframes slideGradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
-.button{
+.button {
     text-decoration: none;
     background-color: var(--acento);
     color: white;
@@ -77,19 +90,21 @@ header{
     border-radius: 100px;
     cursor: pointer;
     font-size: 16px;
-    transition: transform 0.3s , box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #AEB8FE;
 }
 
-.subtitulo{
+.subtitulo {
     color: var(--font-color);
     font-weight: 700;
     margin-top: auto;
 }
-.container{
+
+.container {
     width: 100%;
     height: auto;
     background-color: var(--primaria);
@@ -98,6 +113,7 @@ header{
     justify-content: center;
     align-items: center
 }
+
 .full-carousel {
     position: relative;
     width: 100vw;
@@ -112,7 +128,8 @@ header{
 
 .slides {
     display: flex;
-    width: 500vw; /* 5 slides */
+    width: 500vw;
+    /* 5 slides */
     height: 100%;
     transition: transform 0.7s ease;
 }
@@ -122,7 +139,7 @@ header{
     height: 100vh;
     flex: none;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding-top: 30px;
     align-items: center;
     background: var(--primaria);
@@ -130,37 +147,46 @@ header{
     font-size: 2rem;
     position: relative;
 }
+
 .slide h2 {
     margin-bottom: 20px;
     text-align: center;
 }
-.exemplo-grid{
+
+.exemplo-grid {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
     width: 80%;
 }
+
 .paleta-cores {
     display: flex;
-    flex-direction: column;   /* <-- makes it vertical */
-    align-items: center;      /* <-- centers items horizontally */
+    flex-direction: column;
+    /* <-- makes it vertical */
+    align-items: center;
+    /* <-- centers items horizontally */
     gap: 15px;
     margin-top: 20px;
 }
-.paleta-grid{
+
+.paleta-grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 30px;
 }
-.paleta-cores h3{
+
+.paleta-cores h3 {
     margin-bottom: 20px;
     text-align: center;
 }
-.ordenado{
+
+.ordenado {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
+
 .bg-cor {
     background-color: #3498db;
     color: white;
@@ -232,15 +258,30 @@ header{
 }
 
 /* Posições */
-.bg-pos-center  { background-position: center; }
-.bg-pos-top     { background-position: top; }
-.bg-pos-bottom  { background-position: bottom; }
-.bg-pos-left    { background-position: left; }
-.bg-pos-right   { background-position: right; }
+.bg-pos-center {
+    background-position: center;
+}
+
+.bg-pos-top {
+    background-position: top;
+}
+
+.bg-pos-bottom {
+    background-position: bottom;
+}
+
+.bg-pos-left {
+    background-position: left;
+}
+
+.bg-pos-right {
+    background-position: right;
+}
 
 .gradientes-showcase {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas */
     gap: 20px;
     width: 90%;
     margin: 20px auto;
@@ -252,7 +293,8 @@ header{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* texto na parte de baixo */
+    justify-content: flex-end;
+    /* texto na parte de baixo */
     color: white;
     font-size: 24px;
     font-weight: 600;
@@ -294,8 +336,82 @@ header{
 .grad-radial-complexo {
     background: radial-gradient(circle at top left, #FA8BFF, #2BD2FF, #2BFF88);
 }
+
+.exercicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* CARD PRINCIPAL */
+.card-exercicio {
+    background-image: url('https://www.shutterstock.com/image-vector/pixel-art-illustration-war-fortress-600w-2447580297.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 350px;
+    padding: 40px 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* CÍRCULO NO TOPO */
+.card-exercicio::before {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWrI7ac5e6GUay8Aqt8HFZMUbigaj4uFxF6tjlpO5px5ehqedKNSdZT92NWz-H9OXT-EA&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: absolute;
+    top: -40px;
+    /* metade para fora */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    /* contorno bonito */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* TÍTULO DENTRO DO CARD */
+.card-exercicio h4 {
+    margin-top: 20px;
+    /* para afastar do círculo */
+    font-size: 1.3rem;
+    color: var(--primaria);
+}
+
+/* TEXTO */
+.card-exercicio p {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* BOTÃO */
+.btn-exercicio {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--primaria);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-exercicio:hover {
+    transform: scale(1.05);
+}
+
 /* Buttons */
-.next, .prev {
+.next,
+.prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -307,14 +423,15 @@ header{
     user-select: none;
     z-index: 1000;
 }
+
 .material-symbols-outlined {
     color: var(--acento);
     font-size: 64px;
     font-variation-settings:
-    'FILL' 0,
-    'wght' 500,
-    'GRAD' 1000,
-    'opsz' 50;
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 1000,
+        'opsz' 50;
 }
 
 .next {
@@ -326,16 +443,22 @@ header{
 }
 
 /* Slide Movement */
-#s1:checked ~ .slides {
+#s1:checked~.slides {
     transform: translateX(0);
 }
 
-#s2:checked ~ .slides {
+#s2:checked~.slides {
     transform: translateX(-100vw);
 }
 
-#s3:checked ~ .slides {
+#s3:checked~.slides {
     transform: translateX(-200vw);
 }
-#s4:checked ~ .slides { transform: translateX(-300vw); }
-#s5:checked ~ .slides { transform: translateX(-400vw); }
+
+#s4:checked~.slides {
+    transform: translateX(-300vw);
+}
+
+#s5:checked~.slides {
+    transform: translateX(-400vw);
+}
